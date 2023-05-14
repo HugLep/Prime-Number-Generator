@@ -8,10 +8,10 @@ print("WARNING: Asking for more than 1000 numbers is not recommended, it will re
 howManyPrimes = int(input("How many Prime Numbers do you want to have ? "))
 
 while len(primeNumbers) != howManyPrimes:
-    résultat = currentNumber / divider
-    résultatIsInt = résultat
+    result = currentNumber / divider
+    resultIsInt = result
 
-    if float(résultatIsInt).is_integer():
+    if float(resultIsInt).is_integer():
         otherNumbers.append(currentNumber)
         currentNumber = currentNumber + 1
         divider = 2
