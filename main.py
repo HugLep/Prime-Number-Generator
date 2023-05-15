@@ -4,7 +4,7 @@ startingNumber = 3
 currentNumber = startingNumber
 divider = 2
 
-print("WARNING: Asking for more than 1000 numbers is not recommended, it will require a lot of resources from your computer")
+print("WARNING: Asking for more than 5000 numbers is not recommended, it will require a lot of resources from your computer")
 howManyPrimes = int(input("How many Prime Numbers do you want to have ? "))
 
 while len(primeNumbers) != howManyPrimes:
