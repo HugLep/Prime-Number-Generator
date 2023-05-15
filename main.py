@@ -18,7 +18,7 @@ while len(primeNumbers) != howManyPrimes:
 
     else:
         x = divider + 1
-        if x < currentNumber:
+        if x < (currentNumber / 2):
             divider = x
         else:
             primeNumbers.append(currentNumber)
