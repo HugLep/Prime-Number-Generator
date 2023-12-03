@@ -1,6 +1,8 @@
 # Prime Number Generator
-This repository is a script that will test all possibilities to find as many prime numbers as you want.
+Programme python, ayant pour but de trouver les nombres premiers, se basant sur : "Le Crible d'Ératosthène".
 
-⚠️ - Asking for more than 5000 numbers is not recommended, it will require a lot of resources from your computer - ⚠️
+![image](https://github.com/HugLep/Prime-Number-Generator/assets/55044990/cd7591e0-28e3-420e-8109-d1069fd8e46a)
 
-![Test Image]([https://cloud.githubusercontent.com/assets/3968618/9588666/d029268e-5029-11e5-8a0c-41ecd04207f4.png](https://raw.githubusercontent.com/HugLep/Prime-Number-Generator/main/images/test.png))
+## Comment l'utiliser ?
+1. Exécuter le programme : *main.py*.
+2. Indiquer les nombres premiers inférieurs à combien souhaitez-vous la liste.
