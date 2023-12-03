@@ -1,37 +1,43 @@
-primeNumbers = [2]
-otherNumbers = []
-startingNumber = 3
-currentNumber = startingNumber
-divider = primeNumbers[0]
-x = -1
+primeNumbers = []
+Numbers = []
+currentNumber = 2
+currentNumber1 = 0
+currentMutiple = 1
+startingNumber = 2
 
-print("WARNING: Asking for more than 5000 numbers is not recommended, it will require a lot of resources from your computer")
-howManyPrimes = int(input("How many Prime Numbers do you want to have ? "))
 
-while len(primeNumbers) != howManyPrimes:
-    result = currentNumber / divider
-    resultIsInt = result
+howManyPrimes = int(input("Vous cherchez les nombres premiers inférieurs ou égal à combien ? "))
+howManyPrimes = howManyPrimes - 1
 
-    if float(resultIsInt).is_integer():
-        otherNumbers.append(currentNumber)
-        currentNumber = currentNumber + 1
-        divider = primeNumbers[0]
-        x = -1
+while len(primeNumbers) < howManyPrimes:
+    primeNumbers.append(currentNumber)
+    currentNumber = currentNumber + 1
 
-    else:
-        x = x + 1
-        if x < (len(primeNumbers) - 1):
+currentNumber3 = 0
 
-          divider = primeNumbers[x]
-        else:
-            primeNumbers.append(currentNumber)
-            currentNumber = currentNumber + 1
-            divider = primeNumbers[0]
-            x = -1
+
+while currentNumber3 < len(primeNumbers):
+
+    while currentNumber1 < howManyPrimes:
+        currentNumber = primeNumbers[currentNumber3]
+        currentMutiple = currentMutiple + 1
+
+        currentNumber1 = currentNumber * currentMutiple
+
+        if currentNumber1 in primeNumbers :
+            primeNumbers.remove(currentNumber1)
+            print("Le nombre : ", currentNumber1, " a été supprimé")
+    print("Les mutilpes de : ", currentNumber, " ont été supprimé")
+    currentNumber3 = currentNumber3 + 1
+    currentNumber = 0
+    currentNumber1 = 0
+    currentMutiple = 1
 
 
 print(" ")
-print("Here are ", howManyPrimes, " Prime Numbers that have been generated :")
+print(" ")
+print("Les nombres premiers inférieur à ", howManyPrimes, " sont :")
 print(primeNumbers)
-
-
+print(" ")
+howManyPrimes = howManyPrimes + 1
+print("Il y a ", len(primeNumbers), " nombres premiers inférieur à ", howManyPrimes)
